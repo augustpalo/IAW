@@ -5,7 +5,7 @@ num = int(input("Inserte un numero entero positivo:\n"))
 for i in range(1,num+1):
     if (i%2 == 1):
         printme.append(i)
-print(','.join(map(str,printme)))
+print(', '.join(map(str,printme)))
 
 
 
