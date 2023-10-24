@@ -3,10 +3,10 @@ pantalla la misma fecha en formato dd de <mes> de aaaa donde <mes> es el nombre 
 mes. """
 
 meses = {
-    1 : "Enero",
-    2 : "Febrero",
-    3 : "Marzo",
-    4: "Abril",
+    1:"Enero",
+    2:"Febrero",
+    3:"Marzo",
+    4:"Abril",
     5:"Mayo",
     6:"Junio",
     7:"Julio",
@@ -17,11 +17,10 @@ meses = {
     12:"Diciembre"
 }
 
-dia = input("Inserte una fecha en formato dd/mm/aaaa\ndd:\t")
-mes = input("mm:\t")
-while mes not in meses:
-    mes = input("Valor no valido. Prueba de nuevo\nmm:\t")
-año = input("aaaa:\t")
+fecha = input("Inserte una fecha en formato dd/mm/aaaa:\n\t")
+dia = fecha[0:2]
+mes = int(fecha[3:5])
+año = fecha[6:10]
 
-print(dia + " de " + meses.get(mes) + " de " + año)
+print(dia + " de " + str(meses.get(mes)) + " de " + año)
 
